@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		423E632C278C25660008AC7A /* BaristaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E632B278C25660008AC7A /* BaristaApp.swift */; };
+		423E632E278C25660008AC7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E632D278C25660008AC7A /* ContentView.swift */; };
+		423E6330278C25680008AC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423E632F278C25680008AC7A /* Assets.xcassets */; };
+		423E6333278C25680008AC7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423E6332278C25680008AC7A /* Preview Assets.xcassets */; };
+		423E633D278C25680008AC7A /* BaristaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E633C278C25680008AC7A /* BaristaTests.swift */; };
+		423E6347278C25680008AC7A /* BaristaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E6346278C25680008AC7A /* BaristaUITests.swift */; };
+		423E6349278C25680008AC7A /* BaristaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E6348278C25680008AC7A /* BaristaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		423E6339278C25680008AC7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423E6320278C25660008AC7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 423E6327278C25660008AC7A;
+			remoteInfo = Barista;
+		};
+		423E6343278C25680008AC7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423E6320278C25660008AC7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 423E6327278C25660008AC7A;
+			remoteInfo = Barista;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		423E6328278C25660008AC7A /* Barista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barista.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		423E632B278C25660008AC7A /* BaristaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaApp.swift; sourceTree = "<group>"; };
+		423E632D278C25660008AC7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		423E632F278C25680008AC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		423E6332278C25680008AC7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		423E6338278C25680008AC7A /* BaristaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaristaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		423E633C278C25680008AC7A /* BaristaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaTests.swift; sourceTree = "<group>"; };
+		423E6342278C25680008AC7A /* BaristaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaristaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		423E6346278C25680008AC7A /* BaristaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaUITests.swift; sourceTree = "<group>"; };
+		423E6348278C25680008AC7A /* BaristaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		423E6325278C25660008AC7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423E6335278C25680008AC7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423E633F278C25680008AC7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		423E631F278C25660008AC7A = {
+			isa = PBXGroup;
+			children = (
+				423E632A278C25660008AC7A /* Barista */,
+				423E633B278C25680008AC7A /* BaristaTests */,
+				423E6345278C25680008AC7A /* BaristaUITests */,
+				423E6329278C25660008AC7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		423E6329278C25660008AC7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				423E6328278C25660008AC7A /* Barista.app */,
+				423E6338278C25680008AC7A /* BaristaTests.xctest */,
+				423E6342278C25680008AC7A /* BaristaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		423E632A278C25660008AC7A /* Barista */ = {
+			isa = PBXGroup;
+			children = (
+				423E632B278C25660008AC7A /* BaristaApp.swift */,
+				423E632D278C25660008AC7A /* ContentView.swift */,
+				423E632F278C25680008AC7A /* Assets.xcassets */,
+				423E6331278C25680008AC7A /* Preview Content */,
+			);
+			path = Barista;
+			sourceTree = "<group>";
+		};
+		423E6331278C25680008AC7A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				423E6332278C25680008AC7A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		423E633B278C25680008AC7A /* BaristaTests */ = {
+			isa = PBXGroup;
+			children = (
+				423E633C278C25680008AC7A /* BaristaTests.swift */,
+			);
+			path = BaristaTests;
+			sourceTree = "<group>";
+		};
+		423E6345278C25680008AC7A /* BaristaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				423E6346278C25680008AC7A /* BaristaUITests.swift */,
+				423E6348278C25680008AC7A /* BaristaUITestsLaunchTests.swift */,
+			);
+			path = BaristaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		423E6327278C25660008AC7A /* Barista */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423E634C278C25680008AC7A /* Build configuration list for PBXNativeTarget "Barista" */;
+			buildPhases = (
+				423E6324278C25660008AC7A /* Sources */,
+				423E6325278C25660008AC7A /* Frameworks */,
+				423E6326278C25660008AC7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Barista;
+			productName = Barista;
+			productReference = 423E6328278C25660008AC7A /* Barista.app */;
+			productType = "com.apple.product-type.application";
+		};
+		423E6337278C25680008AC7A /* BaristaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423E634F278C25680008AC7A /* Build configuration list for PBXNativeTarget "BaristaTests" */;
+			buildPhases = (
+				423E6334278C25680008AC7A /* Sources */,
+				423E6335278C25680008AC7A /* Frameworks */,
+				423E6336278C25680008AC7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				423E633A278C25680008AC7A /* PBXTargetDependency */,
+			);
+			name = BaristaTests;
+			productName = BaristaTests;
+			productReference = 423E6338278C25680008AC7A /* BaristaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		423E6341278C25680008AC7A /* BaristaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423E6352278C25680008AC7A /* Build configuration list for PBXNativeTarget "BaristaUITests" */;
+			buildPhases = (
+				423E633E278C25680008AC7A /* Sources */,
+				423E633F278C25680008AC7A /* Frameworks */,
+				423E6340278C25680008AC7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				423E6344278C25680008AC7A /* PBXTargetDependency */,
+			);
+			name = BaristaUITests;
+			productName = BaristaUITests;
+			productReference = 423E6342278C25680008AC7A /* BaristaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		423E6320278C25660008AC7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					423E6327278C25660008AC7A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					423E6337278C25680008AC7A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 423E6327278C25660008AC7A;
+					};
+					423E6341278C25680008AC7A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 423E6327278C25660008AC7A;
+					};
+				};
+			};
+			buildConfigurationList = 423E6323278C25660008AC7A /* Build configuration list for PBXProject "Barista" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 423E631F278C25660008AC7A;
+			productRefGroup = 423E6329278C25660008AC7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				423E6327278C25660008AC7A /* Barista */,
+				423E6337278C25680008AC7A /* BaristaTests */,
+				423E6341278C25680008AC7A /* BaristaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		423E6326278C25660008AC7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423E6333278C25680008AC7A /* Preview Assets.xcassets in Resources */,
+				423E6330278C25680008AC7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423E6336278C25680008AC7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423E6340278C25680008AC7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		423E6324278C25660008AC7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423E632E278C25660008AC7A /* ContentView.swift in Sources */,
+				423E632C278C25660008AC7A /* BaristaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423E6334278C25680008AC7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423E633D278C25680008AC7A /* BaristaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423E633E278C25680008AC7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423E6347278C25680008AC7A /* BaristaUITests.swift in Sources */,
+				423E6349278C25680008AC7A /* BaristaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		423E633A278C25680008AC7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 423E6327278C25660008AC7A /* Barista */;
+			targetProxy = 423E6339278C25680008AC7A /* PBXContainerItemProxy */;
+		};
+		423E6344278C25680008AC7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 423E6327278C25660008AC7A /* Barista */;
+			targetProxy = 423E6343278C25680008AC7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		423E634A278C25680008AC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		423E634B278C25680008AC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		423E634D278C25680008AC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Barista/Preview Content\"";
+				DEVELOPMENT_TEAM = H359XW97M2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coffee.app.Barista;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		423E634E278C25680008AC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Barista/Preview Content\"";
+				DEVELOPMENT_TEAM = H359XW97M2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coffee.app.Barista;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		423E6350278C25680008AC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H359XW97M2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coffee.app.BaristaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barista.app/Barista";
+			};
+			name = Debug;
+		};
+		423E6351278C25680008AC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H359XW97M2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coffee.app.BaristaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barista.app/Barista";
+			};
+			name = Release;
+		};
+		423E6353278C25680008AC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H359XW97M2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coffee.app.BaristaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Barista;
+			};
+			name = Debug;
+		};
+		423E6354278C25680008AC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H359XW97M2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coffee.app.BaristaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Barista;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		423E6323278C25660008AC7A /* Build configuration list for PBXProject "Barista" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423E634A278C25680008AC7A /* Debug */,
+				423E634B278C25680008AC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		423E634C278C25680008AC7A /* Build configuration list for PBXNativeTarget "Barista" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423E634D278C25680008AC7A /* Debug */,
+				423E634E278C25680008AC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		423E634F278C25680008AC7A /* Build configuration list for PBXNativeTarget "BaristaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423E6350278C25680008AC7A /* Debug */,
+				423E6351278C25680008AC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		423E6352278C25680008AC7A /* Build configuration list for PBXNativeTarget "BaristaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423E6353278C25680008AC7A /* Debug */,
+				423E6354278C25680008AC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 423E6320278C25660008AC7A /* Project object */;
+}
