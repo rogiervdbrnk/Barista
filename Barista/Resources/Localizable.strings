@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  Barista
+
+  Created by Rogier van den Brink on 10/01/2022.
+  
+*/
+
+/* HOME */
+"scan_title" = "Dark roasted Beans";
+"scan_subtitle" = "Tab the machine to start";
+"explanation_title" = "How does this work";
+
+/* STYLES */
+"app_title" = "Brew with Lex";
+"style_subtitle" = "Select your style";
+"loading_message_styles" = "Loading coffee styles";
+
+/* SIZES */
+"size_title" = "Select your size";
+"loading_message_sizes" = "Loading coffee sizes";
+
+/* EXTRAS */
+"extras_title" = "Select your extra's";
+"loading_message_extras" = "Loading coffee extras";
+"continue_title" = "Tap here to continue";
+
+/* OVERVIEW */
+"overview_title" = "Overview";
+"overview_button_title" = "Brew your coffee";
+"edit_title" = "Edit";
+"confirmation_title" = "Good busy! 😁";
+"confirmation_message" = "☕️ \nYour coffee is being brewed...";
+"ok_text" = "OK";

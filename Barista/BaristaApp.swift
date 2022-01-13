@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct BaristaApp: App {
+    
+    init() {
+        DependencyContainer.shared.setupDependencies()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let router = Router()
+            router.navigateToScanView()
         }
     }
 }

@@ -6,31 +6,88 @@
 //
 
 import XCTest
+import Combine
 @testable import Barista
 
 class BaristaTests: XCTestCase {
+    
+    var sut: ScanViewModel?
+    let router = Router()
+    private var cancellables: Set<AnyCancellable>!
+    
+    class CoffeeFetcherMock: CoffeeFetchable {
+        let mockCoffee = Coffee(id: "60ba1ab72e35f2d9c786c610",
+                                types: [
+                                    CoffeeStyle(id: "60ba1a062e35f2d9c786c56d",
+                                                name: "Ristretto",
+                                                sizes: [
+                                                    "60ba18d13ca8c43196b5f606",
+                                                    "60ba3368c45ecee5d77a016b"
+                                                ], extras: [
+                                                    "60ba197c2e35f2d9c786c525"
+                                                ])
+                                ],
+                                sizes: [
+                                    Size(id: "60ba18d13ca8c43196b5f606",
+                                         name: "Large",
+                                         v: 0)
+                                ],
+                                extras: [
+                                    Extra(id: "60ba197c2e35f2d9c786c525",
+                                          name: "Select the amount of sugar",
+                                          subselections: [
+                                            Subselection(id: "60ba194dfdd5e192e14eaa75",
+                                                         name: "A lot")
+                                          ])
+                                ])
+        
+        func coffeeRequest() -> AnyPublisher<Coffee, CoffeeError> {
+            return Just(mockCoffee)
+                        .setFailureType(to: CoffeeError.self)
+                        .eraseToAnyPublisher()
+        }
+    }
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = ScanViewModel(router: router)
+        cancellables = []
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+    func testCoffeeFetcher() throws {
+        var coffee: Coffee?
+        var error: CoffeeError?
+        let expectation = self.expectation(description: "Coffee fetcher")
+        // Given
+        
+        sut?.coffeeFetcher = CoffeeFetcherMock()
+        
+        // When
+        sut?.coffeeFetcher?.coffeeRequest()
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let encounteredError):
+                    error = encounteredError
+                }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+                expectation.fulfill()
+            }, receiveValue: { value in
+                coffee = value
+            })
+            .store(in: &cancellables)
+
+        waitForExpectations(timeout: 10)
+
+        // Then
+        XCTAssertNil(error)
+        XCTAssertEqual(coffee?.types.first?.name, "Ristretto")
+        XCTAssertEqual(coffee?.sizes.first?.name, "Large")
+        XCTAssertEqual(coffee?.extras.first?.id, "60ba197c2e35f2d9c786c525")
     }
 
 }
