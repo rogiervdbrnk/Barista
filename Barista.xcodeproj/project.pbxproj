@@ -53,9 +53,9 @@
 		425610B7278E0DAA00EDB325 /* ExtraRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425610B6278E0DAA00EDB325 /* ExtraRowViewModel.swift */; };
 		425610B9278E119A00EDB325 /* ExtraCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425610B8278E119A00EDB325 /* ExtraCardView.swift */; };
 		42C1C875278EBEE7006E3ED2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C1C874278EBEE7006E3ED2 /* NetworkManager.swift */; };
-		42C1C87A278F35C3006E3ED2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C1C879278F35C3006E3ED2 /* Router.swift */; };
 		42C1C87C278F6F58006E3ED2 /* OverviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C1C87B278F6F58006E3ED2 /* OverviewRow.swift */; };
 		42C1C87E278F8091006E3ED2 /* CoffeeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C1C87D278F8091006E3ED2 /* CoffeeButton.swift */; };
+		42F4AED127917FA800972AF1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4AED027917FA800972AF1 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,10 +125,10 @@
 		425610B6278E0DAA00EDB325 /* ExtraRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraRowViewModel.swift; sourceTree = "<group>"; };
 		425610B8278E119A00EDB325 /* ExtraCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraCardView.swift; sourceTree = "<group>"; };
 		42C1C874278EBEE7006E3ED2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		42C1C879278F35C3006E3ED2 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Barista/Router.swift; sourceTree = SOURCE_ROOT; };
 		42C1C87B278F6F58006E3ED2 /* OverviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewRow.swift; sourceTree = "<group>"; };
 		42C1C87D278F8091006E3ED2 /* CoffeeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeButton.swift; sourceTree = "<group>"; };
 		42F4AECE2790133C00972AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		42F4AED027917FA800972AF1 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +179,8 @@
 		423E632A278C25660008AC7A /* Barista */ = {
 			isa = PBXGroup;
 			children = (
+				42F4AECF27917F6500972AF1 /* Routing */,
 				42F4AECE2790133C00972AF1 /* Info.plist */,
-				42C1C878278F3597006E3ED2 /* Routing */,
 				425610AF278DD1AC00EDB325 /* Selectable */,
 				42561091278D6D9A00EDB325 /* Injection */,
 				423E638A278CB59A0008AC7A /* Utils */,
@@ -351,10 +351,10 @@
 			path = Selectable;
 			sourceTree = "<group>";
 		};
-		42C1C878278F3597006E3ED2 /* Routing */ = {
+		42F4AECF27917F6500972AF1 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
-				42C1C879278F35C3006E3ED2 /* Router.swift */,
+				42F4AED027917FA800972AF1 /* Router.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -490,7 +490,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C1C87A278F35C3006E3ED2 /* Router.swift in Sources */,
 				423E637E278C98050008AC7A /* Fonts.swift in Sources */,
 				423E6383278CB1D80008AC7A /* TitleText.swift in Sources */,
 				42561090278CD33500EDB325 /* StylesView.swift in Sources */,
@@ -521,6 +520,7 @@
 				425610A8278DB3A200EDB325 /* ExtrasViewModel.swift in Sources */,
 				425610B3278DFACC00EDB325 /* StyleRowViewModel.swift in Sources */,
 				42561095278D6DF400EDB325 /* DependencyObject.swift in Sources */,
+				42F4AED127917FA800972AF1 /* Router.swift in Sources */,
 				423E6368278C62400008AC7A /* Endpoints.swift in Sources */,
 				42C1C87C278F6F58006E3ED2 /* OverviewRow.swift in Sources */,
 				42561099278D6EA600EDB325 /* Inject.swift in Sources */,
